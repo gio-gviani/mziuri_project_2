@@ -1,0 +1,38 @@
+@keyframes burger-bar-anim-top {
+  0% {
+  }
+  50% {
+    top: 10px;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+}
+@keyframes burger-bar-anim-bottom {
+  0% {
+  }
+  50% {
+    top: 10px;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+}
+@keyframes burger-bar-anim-middle {
+ 0% {
+    
+ }
+    50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+     opacity: 0;
+  }
+}

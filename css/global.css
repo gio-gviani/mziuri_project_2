@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@keyframes burger-bar-anim-top {
+  50% {
+    top: 10px;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+}
+@keyframes burger-bar-anim-bottom {
+  50% {
+    top: 10px;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+}
+@keyframes burger-bar-anim-middle {
+  50% {
+    opacity: 1;
+  }
+  51% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body {
+  background-color: bisque;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+}
+.header .navbar {
+  background-color: transparent !important;
+}
+.header .navbar .header-nav-links {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+}
+.header .navbar .header-burger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.header .navbar .header-burger .middle-line {
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.header .navbar .header-burger .middle-line::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+.header .navbar .header-burger .middle-line:active::after {
+  animation: burger-bar-anim-middle 0.5s ease-in forwards;
+}
+.header .navbar .header-burger::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+.header .navbar .header-burger::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 30px;
+  height: 2px;
+  background-color: black;
+}
+.header .navbar .header-burger:active::after {
+  animation: burger-bar-anim-top 0.5s ease forwards;
+}
+.header .navbar .header-burger:active::before {
+  animation: burger-bar-anim-bottom 0.5s ease forwards;
+}
+.header .navbar .header-menu-paragraph {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+  color: #ffffff;
+}
+
+.pages-dropdown {
+  left: 50%;
+  transform: translateX(-50%);
+}

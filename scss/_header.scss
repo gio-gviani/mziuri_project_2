@@ -1,0 +1,71 @@
+body {
+  background-color: bisque;
+}
+
+.header {position: fixed;
+    width: 100%;
+  .navbar {
+    
+    background-color: transparent !important;
+    .header-nav-links {
+      @include navigation;
+    }
+    .header-burger {
+      width: 30px;
+      height: 30px;
+
+      position: relative;
+
+      .middle-line {
+        position: absolute;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          width: 30px;
+          height: 2px;
+          background-color: black;
+        }
+        &:active::after {
+          animation: burger-bar-anim-middle 0.5s ease-in forwards;
+        }
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 20px;
+        width: 30px;
+        height: 2px;
+        background-color: black;
+      }
+      &:active::after {
+        animation: burger-bar-anim-top 0.5s ease forwards;
+      }
+      &:active::before {
+        animation: burger-bar-anim-bottom 0.5s ease forwards;
+      }
+    }
+    .header-menu-paragraph {
+      @include boild-text;
+      color: #ffffff;
+    }
+  }
+}
+.pages-dropdown {
+  left: 50%;
+  transform: translateX(-50%);
+}

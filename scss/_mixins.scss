@@ -1,0 +1,128 @@
+@mixin h1-heading {
+  color: #000000;
+  font-family: $font-Unna;
+  font-size: 70px;
+  font-weight: 400;
+}
+@mixin h2-heading {
+  color: #000000;
+  font-family: $font-Unna;
+  font-size: 55px;
+  font-weight: 700;
+}
+@mixin h3-heading {
+  color: #000000;
+  font-family: $font-Unna;
+  font-size: 36px;
+  font-weight: 400;
+}
+@mixin h4-heading {
+  color: #000000;
+  font-family: $font-Unna;
+  font-size: 31px;
+  font-weight: 400;
+}
+@mixin h5-heading {
+  color: #000000;
+  font-family: $font-Unna;
+  font-size: 20px;
+  font-weight: 400;
+}
+@mixin h6-heading {
+  color: #000000;
+  font-family: $font-Unna;
+  font-size: 16px;
+  font-weight: 400;
+}
+@mixin navigation {
+  
+    font-size: 15px;
+    font-family: $font-Roboto;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+@mixin paragraph {
+  color: #353535;
+  font-family: $font-Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+@mixin boild-text {
+  color: #353535;
+  font-family: $font-Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.75;
+}
+@mixin highlighted-text {
+  color: #ffffff;
+  margin: 0 2px;
+  padding: 3px 5px;
+  background-color: #ff5d2a;
+  font-family: $font-Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+@mixin line-through-text {
+  text-decoration: line-through;
+  font-family: $font-Roboto;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+@mixin underline-text {
+  text-decoration: underline;
+  font-family: $font-Roboto;
+  color: #353535;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+@mixin link {
+  color: #ff5d2a;
+  text-decoration: none;
+
+  &:hover {
+    color: #dd3500;
+  }
+  font-family: $font-Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+@mixin tooltip {
+  color: #ff5d2a;
+  width: fit-content;
+ 
+  font-family: $font-Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  margin-top: 40px;
+  margin-left: 30px;
+ 
+  &:hover::after { 
+    content: "tooltip";
+    position: relative;
+    left: -48.09px;
+
+    top: -30px;
+    background-color: #ff5d2a;
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 3px;
+  }
+  &:hover::before {
+    content: "..";
+    position: absolute;
+    top: 13px;
+    left: 48px;
+    background-color: #ff5d2a;
+    border-radius: 4% 46% 48% 52% / 0% 0% 100% 100%;
+  }
+}

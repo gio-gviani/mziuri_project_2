@@ -41,6 +41,13 @@
     font-weight: 500;
     color: #ffffff;
 }
+@mixin Roboto-subtitles {
+  
+    font-size: 20px;
+    font-family: $font-Roboto;
+    font-weight: 400;
+    color: #000000;
+}
 
 
 @mixin paragraph {

@@ -2,14 +2,51 @@ body {
   background-color: bisque;
 }
 
-.header {position: fixed;
-    width: 100%;
+.header {
+  position: fixed;
+  width: 100%;
   .navbar {
-    
     background-color: transparent !important;
     .header-nav-links {
       @include navigation;
+      margin-bottom: 3px;
+      transition: 0.1s ease-in;
+      &:hover {
+        border-bottom: 3px solid $color-orenge-light;
+        margin-bottom: 0px;
+      }
     }
+    .header-nav-links-selected {
+      border-bottom: 3px solid $color-orenge-light;
+      margin-bottom: 0px;
+    }
+
+    .dropdown {
+      .dropdown-menu {
+        margin-top: 20px;
+        padding: 26px 20px !important;
+        .header-dropdown-subtitles {
+          @include Roboto-subtitles;
+          margin-bottom: 10px !important;
+        }
+
+        .dropdown-item {
+          @include paragraph;
+
+          width: 200px;
+          padding: 14px 0px;
+          padding-left: 5px;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        .dropdown-divider {
+          margin: 0;
+        }
+      }
+    }
+
     .header-burger {
       width: 30px;
       height: 30px;

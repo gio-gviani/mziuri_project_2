@@ -1,0 +1,213 @@
+.offcanvas {
+  width: 28.5% !important;
+  max-height: 100%;
+  overflow-y: auto;
+  h4 {
+    @include h4-heading;
+  }
+  p {
+    @include paragraph;
+    width: 333px;
+  }
+
+  .offcanvas-carusel {
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: center;
+    a {
+      @include paragraph;
+      font-weight: 900;
+      transition: 0.5s;
+      margin-top: 20px;
+      transform: translate(-10px, 20px);
+    }
+    a:hover {
+      background-color: $color-orenge-light !important;
+      color: white;
+      border: 0;
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      display: flex;
+      justify-content: center;
+      flex-direction: row-reverse;
+      flex-wrap: wrap-reverse;
+      align-items: center;
+
+      input[type="radio"] {
+        display: none;
+      }
+      .homepage-offcanvas-radio {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+      .homepage-offcanvas-radio::before {
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: $color-grey-light;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      input[type="radio"]:checked + .homepage-offcanvas-radio::after {
+        content: "";
+        width: 9px;
+        height: 9px;
+        background-color: $color-orenge-light;
+        border-radius: 50%;
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .cards {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 275px !important;
+        margin-bottom: 20px;
+      }
+      .card {
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+
+        div {
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          object-fit: cover;
+
+          background-size: cover;
+          overflow: hidden;
+          position: relative;
+          transition: 0.5s ease-in;
+        }
+        overflow: hidden;
+        p {
+          @include navigation;
+          transition: 1s;
+          color: white;
+          font-weight: 700;
+          position: absolute;
+          width: fit-content;
+
+          padding: 5px;
+          right: 15px;
+          top: 15px;
+
+          background-color: $color-orenge-light;
+          border-radius: 3px;
+        }
+        h4 {
+          @include h4-heading;
+          transition: 1s;
+          color: white;
+
+          width: 200px;
+          position: absolute;
+          bottom: 50px;
+
+          left: 20px;
+        }
+        &:hover {
+          div {
+            height: 70%;
+          }
+          p {
+            opacity: 0;
+            transform: translate(0, -50px);
+          }
+        }
+
+        &::after {
+          @include paragraph;
+          position: relative;
+
+          height: 0%;
+          width: 100%;
+          background-color: white;
+          display: block;
+          opacity: 0;
+          transform: translate(-200px, 0);
+          padding: 0 40px;
+          top: 15px;
+        }
+        &:hover::after {
+          opacity: 1;
+          transform: translate(0, 0);
+        }
+      }
+
+      .offcanvas-carusel-card-vegan {
+        div {
+          background-image: url("../img/tour-2-258x273.jpg");
+        }
+        &::after {
+          content: "A healthier version of all cream-based soups.";
+        }
+      }
+      .offcanvas-carusel-card-bread {
+        div {
+          background-image: url("../img/tour-3-258x273.jpg");
+        }
+        &::after {
+          content: "Make your own Artisan Bread at home.";
+        }
+      }
+      .offcanvas-carusel-card-salad {
+        div {
+          background-image: url("../img/tour-1-258x273.jpg");
+        }
+        &::after {
+          content: "An easy-to-cook pea salad with pieces of cheese.";
+        }
+      }
+      #item-1:checked ~ .cards #song-3,
+      #item-2:checked ~ .cards #song-1,
+      #item-3:checked ~ .cards #song-2 {
+        transform: translatex(-20%) scale(0.9);
+        opacity: 0.4;
+        z-index: 0;
+      }
+
+      #item-1:checked ~ .cards #song-2,
+      #item-2:checked ~ .cards #song-3,
+      #item-3:checked ~ .cards #song-1 {
+        transform: translatex(20%) scale(0.9);
+        opacity: 0.4;
+        z-index: 0;
+      }
+
+      #item-1:checked ~ .cards #song-1,
+      #item-2:checked ~ .cards #song-2,
+      #item-3:checked ~ .cards #song-3 {
+        transform: translatex(0) scale(1);
+        opacity: 1;
+        z-index: 1;
+
+        img {
+          box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+        }
+      }
+    }
+  }
+}

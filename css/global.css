@@ -4,6 +4,7 @@
 */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500,700&display=swap");
 html,
 body,
 div,
@@ -182,6 +183,43 @@ body {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  margin-bottom: 3px;
+  transition: 0.1s ease-in;
+}
+.header .navbar .header-nav-links:hover {
+  border-bottom: 3px solid #ff5d2a;
+  margin-bottom: 0px;
+}
+.header .navbar .header-nav-links-selected {
+  border-bottom: 3px solid #ff5d2a;
+  margin-bottom: 0px;
+}
+.header .navbar .dropdown .dropdown-menu {
+  margin-top: 20px;
+  padding: 26px 20px !important;
+}
+.header .navbar .dropdown .dropdown-menu .header-dropdown-subtitles {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 10px !important;
+}
+.header .navbar .dropdown .dropdown-menu .dropdown-item {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  width: 200px;
+  padding: 14px 0px;
+  padding-left: 5px;
+}
+.header .navbar .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: transparent;
+}
+.header .navbar .dropdown .dropdown-menu .dropdown-divider {
+  margin: 0;
 }
 .header .navbar .header-burger {
   width: 30px;
@@ -240,4 +278,218 @@ body {
 .pages-dropdown {
   left: 50%;
   transform: translateX(-50%);
+}
+
+.offcanvas {
+  width: 28.5% !important;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.offcanvas h4 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+}
+.offcanvas p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  width: 333px;
+}
+.offcanvas .offcanvas-carusel {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
+.offcanvas .offcanvas-carusel a {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  font-weight: 900;
+  transition: 0.5s;
+  margin-top: 20px;
+  transform: translate(-10px, 20px);
+}
+.offcanvas .offcanvas-carusel a:hover {
+  background-color: #ff5d2a !important;
+  color: white;
+  border: 0;
+}
+.offcanvas .offcanvas-carusel .container {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+}
+.offcanvas .offcanvas-carusel .container input[type=radio] {
+  display: none;
+}
+.offcanvas .offcanvas-carusel .container .homepage-offcanvas-radio {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.offcanvas .offcanvas-carusel .container .homepage-offcanvas-radio::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.offcanvas .offcanvas-carusel .container input[type=radio]:checked + .homepage-offcanvas-radio::after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background-color: #ff5d2a;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.offcanvas .offcanvas-carusel .container .cards {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 275px !important;
+  margin-bottom: 20px;
+}
+.offcanvas .offcanvas-carusel .container .card {
+  position: absolute;
+  width: 75%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.offcanvas .offcanvas-carusel .container .card div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s ease-in;
+}
+.offcanvas .offcanvas-carusel .container .card p {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  transition: 1s;
+  color: white;
+  font-weight: 700;
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
+  right: 15px;
+  top: 15px;
+  background-color: #ff5d2a;
+  border-radius: 3px;
+}
+.offcanvas .offcanvas-carusel .container .card h4 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  transition: 1s;
+  color: white;
+  width: 200px;
+  position: absolute;
+  bottom: 50px;
+  left: 20px;
+}
+.offcanvas .offcanvas-carusel .container .card:hover div {
+  height: 70%;
+}
+.offcanvas .offcanvas-carusel .container .card:hover p {
+  opacity: 0;
+  transform: translate(0, -50px);
+}
+.offcanvas .offcanvas-carusel .container .card::after {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  position: relative;
+  height: 0%;
+  width: 100%;
+  background-color: white;
+  display: block;
+  opacity: 0;
+  transform: translate(-200px, 0);
+  padding: 0 40px;
+  top: 15px;
+}
+.offcanvas .offcanvas-carusel .container .card:hover::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.offcanvas .offcanvas-carusel .container .offcanvas-carusel-card-vegan div {
+  background-image: url("../img/tour-2-258x273.jpg");
+}
+.offcanvas .offcanvas-carusel .container .offcanvas-carusel-card-vegan::after {
+  content: "A healthier version of all cream-based soups.";
+}
+.offcanvas .offcanvas-carusel .container .offcanvas-carusel-card-bread div {
+  background-image: url("../img/tour-3-258x273.jpg");
+}
+.offcanvas .offcanvas-carusel .container .offcanvas-carusel-card-bread::after {
+  content: "Make your own Artisan Bread at home.";
+}
+.offcanvas .offcanvas-carusel .container .offcanvas-carusel-card-salad div {
+  background-image: url("../img/tour-1-258x273.jpg");
+}
+.offcanvas .offcanvas-carusel .container .offcanvas-carusel-card-salad::after {
+  content: "An easy-to-cook pea salad with pieces of cheese.";
+}
+.offcanvas .offcanvas-carusel .container #item-1:checked ~ .cards #song-3,
+.offcanvas .offcanvas-carusel .container #item-2:checked ~ .cards #song-1,
+.offcanvas .offcanvas-carusel .container #item-3:checked ~ .cards #song-2 {
+  transform: translatex(-20%) scale(0.9);
+  opacity: 0.4;
+  z-index: 0;
+}
+.offcanvas .offcanvas-carusel .container #item-1:checked ~ .cards #song-2,
+.offcanvas .offcanvas-carusel .container #item-2:checked ~ .cards #song-3,
+.offcanvas .offcanvas-carusel .container #item-3:checked ~ .cards #song-1 {
+  transform: translatex(20%) scale(0.9);
+  opacity: 0.4;
+  z-index: 0;
+}
+.offcanvas .offcanvas-carusel .container #item-1:checked ~ .cards #song-1,
+.offcanvas .offcanvas-carusel .container #item-2:checked ~ .cards #song-2,
+.offcanvas .offcanvas-carusel .container #item-3:checked ~ .cards #song-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+.offcanvas .offcanvas-carusel .container #item-1:checked ~ .cards #song-1 img,
+.offcanvas .offcanvas-carusel .container #item-2:checked ~ .cards #song-2 img,
+.offcanvas .offcanvas-carusel .container #item-3:checked ~ .cards #song-3 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
 }

@@ -103,7 +103,7 @@
         }
         overflow: hidden;
         p {
-          @include navigation;
+          @include links;
           transition: 1s;
           color: white;
           font-weight: 700;

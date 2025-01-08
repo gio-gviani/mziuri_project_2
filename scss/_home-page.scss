@@ -1,0 +1,320 @@
+.homepage-main-carusel-section {
+  position: relative;
+
+  .carousel-indicators {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 150px;
+    transform: translateY(-50%);
+    top: 50% !important;
+
+    right: 0px !important;
+    left: auto;
+    bottom: auto;
+
+    margin: 0;
+    .homepage-main-carusel-buttons {
+      width: fit-content;
+      height: 20px;
+      background-color: transparent;
+      margin-bottom: 30px;
+      border: 0;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        width: 10px;
+        height: 10px;
+        display: block;
+        border-radius: 50%;
+        background-color: #fff;
+        text-indent: 1px;
+      }
+      p {
+        display: block;
+        text-indent: 1px;
+        @include links;
+      }
+    }
+  }
+  .carousel-inner {
+    .carousel-item {
+      img {
+        height: 95vh !important;
+      }
+      .carousel-caption {
+        transform: translate(-50%);
+        top: 20%;
+        left: 50%;
+        bottom: auto;
+        right: auto;
+
+        h4 {
+          @include h4-heading;
+          color: #fff;
+          font-size: 38px;
+          margin-bottom: 90px !important;
+        }
+        .main-title {
+          @include h1-heading;
+          font-size: 130px;
+          color: #fff;
+          text-decoration: none;
+          font-weight: 700;
+          transition: 0.1s;
+
+          &:hover {
+            text-shadow: 0px 0px 25px black;
+          }
+        }
+        .down-arrow-icon {
+          background-color: #fff;
+          border-radius: 50%;
+          padding: 30px;
+          position: relative;
+          svg {
+            color: $color-orenge-light;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 76px;
+            height: 77px;
+            border-radius: 50%;
+            border: 0.5px solid white;
+            scale: 1.3;
+            top: 0px;
+            left: 0px;
+            transition: 0.5s;
+            opacity: 0.5;
+          }
+          &:hover::after {
+            scale: 0.9;
+            opacity: 0;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            width: 76px;
+            height: 77px;
+            border-radius: 50%;
+            border: 0.5px solid white;
+            opacity: 0.5;
+            scale: 1.6;
+            top: 0px;
+            left: 0px;
+            transition: 0.5s;
+          }
+          &:hover::before {
+            scale: 0.9;
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.homepage-popular-categories-section {
+  height: 70vh;
+  background-image: url(../img/bg-image-2.jpg);
+  a {
+    width: fit-content;
+  }
+  form {
+    margin: 0;
+
+    .col,
+    .col-5 {
+      border-bottom: 1px solid white;
+
+      border-right: 1px solid white;
+      padding: 30px 45px;
+    }
+
+    i {
+      color: white;
+      font-size: 20px;
+    }
+    input {
+      width: max-content;
+      margin-left: 20px;
+      background-color: transparent;
+      border: 0;
+      outline: none;
+      height: 38px;
+      font-size: 20px;
+      @include Roboto-subtitles;
+      color: white;
+    }
+    input::placeholder {
+      @include Roboto-subtitles;
+      color: white;
+    }
+    a {
+      background-color: #fff;
+
+      padding: 20px;
+      border-radius: 5px;
+      @include links;
+      font-weight: 900;
+      color: black;
+      transition: 0.2s ease-in;
+
+      &:hover {
+        background-color: $color-orenge-light;
+        color: white;
+        i {
+          color: white;
+        }
+      }
+      i {
+        color: black;
+      }
+    }
+  }
+
+  .homepage-popular-categories-topbar {
+    margin-top: 60px;
+    h6 {
+      @include boild-text;
+
+      color: white;
+      margin-bottom: 20px;
+    }
+    .custom-nav {
+      button {
+        background: none;
+
+        border: none;
+      }
+      a {
+        @include links;
+        color: white;
+
+        background-color: rgba(0, 0, 0, 0.3);
+        height: fit-content;
+        border-radius: 4px;
+        padding: 10px 23px;
+        margin-left: 30px;
+      }
+    }
+  }
+  .owl-carousel {
+    .owl-stage {
+      height: 240px;
+      margin-top: 20px;
+    }
+    .owl-carousel-items {
+      height: 200px;
+      border-radius: 8px;
+
+      background-size: cover;
+      padding: 15px;
+      transition: 0.5s;
+      position: relative;
+      overflow: hidden;
+      h3 {
+        @include h3-heading;
+        font-weight: 700;
+        width: max-content;
+        color: white; /* Text color for contrast */
+        position: absolute;
+        bottom: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.5s;
+      }
+      &:hover {
+        position: relative;
+        transform: scale(1.1);
+        h3 {
+          bottom: 80px;
+        }
+      }
+      &::after {
+        width: max-content;
+        position: absolute;
+        transform: translate(-50%);
+
+        left: 50%;
+        @include paragraph;
+        color: white;
+        font-size: 190px;
+        opacity: 0;
+        transition: 1s;
+        font-weight: 700;
+      }
+      &::before {
+        content: "20 Resipes";
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        bottom: 0px;
+        color: $color-orenge-light;
+        background-color: #fff;
+        border-radius: 50px;
+        padding: 10px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+      &:hover::before {
+        opacity: 1;
+        bottom: 30px;
+      }
+      &:hover::after {
+        position: absolute;
+
+        font-size: 90px;
+        opacity: 0.3;
+      }
+    }
+    .homepage-popular-categories-carusel-item-1 {
+      background-image: url(../img/destinations-3-363x260.jpg);
+      &::after {
+        content: "Asian Food";
+      }
+      &::before {
+        content: "22 Resipes";
+      }
+    }
+    .homepage-popular-categories-carusel-item-2 {
+      background-image: url(../img/destinations-8-363x260.jpg);
+      &::after {
+        content: "Salads";
+      }
+      &::before {
+        content: "20 Resipes";
+      }
+    }
+    .homepage-popular-categories-carusel-item-3 {
+      background-image: url(../img/destinations-1-363x260.jpg);
+      &::after {
+        content: "Seafood";
+      }
+      &::before {
+        content: "67 Resipes";
+      }
+    }
+    .homepage-popular-categories-carusel-item-4 {
+      background-image: url(../img/destinations-2-363x260.jpg);
+      &::after {
+        content: "Pizzas";
+      }
+      &::before {
+        content: "50 Resipes";
+      }
+    }
+    .homepage-popular-categories-carusel-item-5 {
+      background-image: url(../img/destinations-6-363x260.jpg);
+      &::after {
+        content: "Cocktails";
+      }
+      &::before {
+        content: "17 Resipes";
+      }
+    }
+  }
+}

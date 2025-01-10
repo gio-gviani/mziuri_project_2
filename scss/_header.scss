@@ -1,12 +1,10 @@
-body {
-  background-color: bisque;
-}
+
 
 .header {
   position: sticky;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 
   .navbar {
     background-color: transparent !important;

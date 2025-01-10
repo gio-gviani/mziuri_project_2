@@ -171,15 +171,11 @@ a {
     opacity: 0;
   }
 }
-body {
-  background-color: bisque;
-}
-
 .header {
   position: sticky;
   top: 0px;
   width: 100%;
-  z-index: 1;
+  z-index: 3;
 }
 .header .navbar {
   background-color: transparent !important;
@@ -837,4 +833,89 @@ body {
 }
 .homepage-popular-categories-section .owl-carousel .homepage-popular-categories-carusel-item-5::before {
   content: "17 Resipes";
+}
+
+.latest-recipes-section {
+  background-color: #f6f6f6;
+  padding: 130px 0;
+}
+.latest-recipes-section h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  font-weight: 700;
+}
+.latest-recipes-section .latest-recipes-bottom-link {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-weight: 500;
+  color: grey;
+  position: relative;
+  transition: 0.2s;
+}
+.latest-recipes-section .latest-recipes-bottom-link:hover {
+  color: #ff5d2a;
+}
+.latest-recipes-section .latest-recipes-bottom-link::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 1px;
+  background-color: grey;
+  bottom: -10px;
+  left: 50%;
+  transition: 0.2s;
+  transform: translateX(-50%);
+}
+.latest-recipes-section .latest-recipes-bottom-link:hover::after {
+  background-color: #ff5d2a;
+  width: 150px;
+}
+.latest-recipes-section .latest-recipes-cardwrapper {
+  max-width: 1200px;
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card {
+  width: 360px;
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card .card-body {
+  position: relative;
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card .card-body .latest-recipes-card-category-title {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-weight: 900;
+  position: absolute;
+  transform: translate(20px, -64px);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px 5px 0 0;
+  text-transform: uppercase;
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card .card-body a {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  transition: 0.5s;
+  transform: translate(0px, -153px);
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card .card-body a:hover {
+  color: #ff5d2a;
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card .card-body i {
+  margin-top: 5px;
+  color: #c4c4c4;
+}
+.latest-recipes-section .latest-recipes-cardwrapper .card .card-body p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
 }

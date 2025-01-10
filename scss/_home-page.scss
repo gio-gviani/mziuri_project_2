@@ -318,3 +318,73 @@
     }
   }
 }
+.latest-recipes-section {
+  background-color: #f6f6f6;
+  padding: 130px 0;
+  
+  h2 {
+    @include h2-heading;
+  }
+  .latest-recipes-bottom-link {
+    @include links;
+    font-weight: 500;
+    color: grey;
+    position: relative;
+    transition: 0.2s;
+    &:hover {
+      color: $color-orenge-light;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 1px;
+      background-color: grey;
+      bottom: -10px;
+      left: 50%;
+      transition: 0.2s;
+      transform: translateX(-50%);
+    }
+    &:hover::after {
+      background-color: $color-orenge-light;
+      width: 150px;
+    }
+  }
+  .latest-recipes-cardwrapper {
+    max-width: 1200px;
+    .card {
+      width: 360px;
+      .card-body {
+        position: relative;
+        .latest-recipes-card-category-title {
+          @include links;
+          font-weight: 900;
+          // color: white;
+          position: absolute;
+          transform: translate(20px, -64px);
+          background-color: rgba(0, 0, 0, 0.4);
+          padding: 10px 20px;
+          width: fit-content;
+          border-radius: 5px 5px 0 0;
+          text-transform: uppercase;
+        }
+        a {
+          @include h4-heading;
+          transition: 0.5s;
+          transform: translate(0px, -153px);
+
+          &:hover {
+            color: $color-orenge-light;
+          }
+        }
+        i {
+          margin-top: 5px;
+          color: $color-grey-light;
+        }
+        p {
+          @include paragraph;
+        }
+      }
+    }
+  }
+}

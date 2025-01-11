@@ -176,6 +176,7 @@ a {
   top: 0px;
   width: 100%;
   z-index: 3;
+  background-color: #353535;
 }
 .header .navbar {
   background-color: transparent !important;
@@ -185,6 +186,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
   margin-bottom: 3px;
   transition: 0.1s ease-in;
 }
@@ -209,6 +211,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 400;
   color: #000000;
+  line-height: 1.75;
   margin-bottom: 10px !important;
 }
 .header .navbar .dropdown .dropdown-menu .dropdown-item {
@@ -291,6 +294,7 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
+  line-height: 1.75;
 }
 .offcanvas p {
   color: #353535;
@@ -399,6 +403,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
   transition: 1s;
   color: white;
   font-weight: 700;
@@ -416,6 +421,7 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
+  line-height: 1.75;
   transition: 1s;
   color: white;
   width: 200px;
@@ -536,6 +542,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
 }
 .homepage-main-carusel-section .carousel-inner .carousel-item img {
   height: 95vh !important;
@@ -552,6 +559,7 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
+  line-height: 1.75;
   color: #fff;
   font-size: 38px;
   margin-bottom: 90px !important;
@@ -560,6 +568,7 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 70px;
+  line-height: 1.75;
   font-weight: 400;
   font-size: 130px;
   color: #fff;
@@ -648,6 +657,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 400;
   color: #000000;
+  line-height: 1.75;
   color: white;
 }
 .homepage-popular-categories-section form input::-moz-placeholder {
@@ -655,6 +665,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 400;
   color: #000000;
+  line-height: 1.75;
   color: white;
 }
 .homepage-popular-categories-section form input::placeholder {
@@ -662,6 +673,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 400;
   color: #000000;
+  line-height: 1.75;
   color: white;
 }
 .homepage-popular-categories-section form a {
@@ -672,6 +684,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
   font-weight: 900;
   color: black;
   transition: 0.2s ease-in;
@@ -707,6 +720,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
   color: white;
   background-color: rgba(0, 0, 0, 0.3);
   height: -moz-fit-content;
@@ -733,6 +747,7 @@ a {
   font-family: "Unna", serif;
   font-size: 36px;
   font-weight: 400;
+  line-height: 1.75;
   font-weight: 700;
   width: -moz-max-content;
   width: max-content;
@@ -843,6 +858,7 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 55px;
+  line-height: 1.75;
   font-weight: 700;
 }
 .latest-recipes-section .latest-recipes-bottom-link {
@@ -850,6 +866,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
   font-weight: 500;
   color: grey;
   position: relative;
@@ -887,6 +904,7 @@ a {
   font-family: "Roboto", serif;
   font-weight: 500;
   color: #ffffff;
+  line-height: 1.75;
   font-weight: 900;
   position: absolute;
   transform: translate(20px, -64px);
@@ -902,6 +920,7 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
+  line-height: 1.75;
   transition: 0.5s;
   transform: translate(0px, -153px);
 }
@@ -918,4 +937,298 @@ a {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.75;
+}
+
+.homepage-aboutme-section {
+  padding: 130px 0px;
+}
+.homepage-aboutme-section .homepage-aboutme-image {
+  background-image: url(../img/counter-img-719x609.png);
+  height: 609px;
+}
+.homepage-aboutme-section h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  line-height: 1.75;
+  font-weight: 700;
+}
+.homepage-aboutme-section p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.homepage-aboutme-section span {
+  color: #ff5d2a;
+  font-family: "Unna", serif;
+  font-size: 47px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.homepage-featuredrecipes-section {
+  background-image: url(../img/bg-image-2.jpg);
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg {
+  background-image: url(../img/bg-image-10.jpg);
+  background-size: cover;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box {
+  position: relative;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .custom-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  z-index: 2;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .custom-nav button {
+  background-color: white;
+  border-radius: 50%;
+  padding: 23px;
+  border: 0;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel {
+  padding: 20px;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card {
+  width: 500px !important;
+  transform: translateX(60px) !important;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card .card-body {
+  padding: 30px 40px;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card .card-body h4 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card .card-body p {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.75;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  padding: 9px 16px;
+  top: 30px;
+  border-radius: 5px;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-titles {
+  width: 515px;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-titles h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  line-height: 1.75;
+  font-weight: 700;
+  color: white;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-titles p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: white;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-titles a {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.75;
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+  padding: 17px 50px;
+  border-radius: 5px;
+  font-weight: 900;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-titles a:hover {
+  color: white;
+  background-color: #ff5d2a;
+}
+
+.homepage-freeoffer-section {
+  background-image: url(../img/bg-image-9.jpg);
+  background-size: cover;
+  padding: 105px 0;
+}
+.homepage-freeoffer-section h4 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #ff5d2a;
+  text-align: center;
+}
+.homepage-freeoffer-section p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+}
+.homepage-freeoffer-section h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  line-height: 1.75;
+  font-weight: 700;
+  text-align: center;
+}
+.homepage-freeoffer-section a {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.75;
+  background-color: #ff5d2a;
+  color: white;
+  transition: 0.5s;
+  padding: 17px 30px;
+  border-radius: 5px;
+  font-weight: 900;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.homepage-information-section {
+  padding: 139px 0;
+}
+.homepage-information-section h3 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.75;
+  font-weight: 700;
+}
+.homepage-information-section a {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+}
+.homepage-information-section a:hover {
+  color: #ff5d2a;
+}
+.homepage-information-section h5 {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+}
+.homepage-information-section p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.homepage-information-section .homepage-information-email-link {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #ff5d2a;
+}
+.homepage-information-section i {
+  font-size: 31px;
+}
+.homepage-information-section form {
+  border: 1px solid #ff5d2a;
+}
+.homepage-information-section form input {
+  width: 90%;
+  outline: none;
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.homepage-information-section form button {
+  background-color: transparent;
+}
+.homepage-information-section form button i {
+  color: #ff5d2a;
+}
+
+.footer {
+  padding: 130px 0px;
+  box-sizing: content-box;
+  background-image: url(../img/bg-image-2.jpg);
+  height: 30vh;
+}
+.footer i {
+  font-size: 22px;
+}
+.footer h3 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.75;
+  font-weight: 700;
+  color: white;
+}
+.footer p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: white;
+  width: 330px;
+}
+.footer a {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.5s;
+}
+.footer a:hover {
+  color: #ff5d2a;
+}
+.footer .footer-links {
+  padding: 14px;
+  display: flex;
+}
+.footer .footer-links:hover {
+  background-color: #fff;
+}
+.footer .footer-links:hover i {
+  color: #ff5d2a !important;
+}
+
+.goup-link {
+  background-color: #ff5d2a;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.goup-link:hover {
+  background-color: #75c15b;
 }

@@ -1,0 +1,53 @@
+.footer {
+    padding: 130px 0px;
+    box-sizing: content-box;
+  background-image: url(../img/bg-image-2.jpg);
+  height: 30vh;
+  i {
+    font-size: 22px;
+  }
+  h3 {
+    @include h3-heading;
+    font-weight: 700;
+    color: white;
+  }
+  p {
+    @include paragraph;
+    color: white;
+    width: 330px;
+  }
+  a {
+    @include paragraph;
+    color: rgba(255, 255, 255, 0.7);
+    
+
+    transition: 0.5s;
+    &:hover {
+      color: $color-orenge-light;
+    }
+  }
+  .footer-links {
+    padding: 14px;
+    display: flex;
+
+ 
+    &:hover {
+      background-color: #fff;
+      i {
+        color: $color-orenge-light !important;
+      }
+    }
+  }
+}
+.goup-link {
+    background-color: $color-orenge-light;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s;
+    border-radius: 4px;
+    &:hover {
+        background-color: $color-green-light;
+    }
+  
+}

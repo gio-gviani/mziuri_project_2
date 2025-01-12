@@ -14,10 +14,15 @@
     }
   
 }
-
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 @import "header";
 @import "offcanvas";
 @import "home-page";
 @import "contactus-page";
+@import "blog-page";
+@import "about-page";
 @import "footer";

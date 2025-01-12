@@ -192,6 +192,11 @@ a {
   background-color: #75c15b;
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .header {
   position: sticky;
   top: 0px;
@@ -315,7 +320,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
 }
 .offcanvas p {
   color: #353535;
@@ -442,7 +446,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
   transition: 1s;
   color: white;
   width: 200px;
@@ -580,7 +583,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
   color: #fff;
   font-size: 38px;
   margin-bottom: 90px !important;
@@ -589,7 +591,6 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 70px;
-  line-height: 1.75;
   font-weight: 400;
   font-size: 130px;
   color: #fff;
@@ -768,7 +769,6 @@ a {
   font-family: "Unna", serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.75;
   font-weight: 700;
   width: -moz-max-content;
   width: max-content;
@@ -879,7 +879,6 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 55px;
-  line-height: 1.75;
   font-weight: 700;
 }
 .latest-recipes-section .latest-recipes-bottom-link {
@@ -941,7 +940,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
   transition: 0.5s;
   transform: translate(0px, -153px);
 }
@@ -971,7 +969,6 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 55px;
-  line-height: 1.75;
   font-weight: 700;
 }
 .homepage-aboutme-section p {
@@ -1028,7 +1025,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
 }
 .homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card .card-body p {
   font-size: 15px;
@@ -1049,7 +1045,6 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 55px;
-  line-height: 1.75;
   font-weight: 700;
   color: white;
 }
@@ -1091,7 +1086,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
   color: #ff5d2a;
   text-align: center;
 }
@@ -1107,15 +1101,15 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 55px;
-  line-height: 1.75;
   font-weight: 700;
   text-align: center;
 }
 .homepage-freeoffer-section a {
-  font-size: 15px;
+  color: #ff5d2a;
+  text-decoration: none;
   font-family: "Roboto", serif;
-  font-weight: 500;
-  color: #ffffff;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.75;
   background-color: #ff5d2a;
   color: white;
@@ -1126,6 +1120,13 @@ a {
   width: -moz-fit-content;
   width: fit-content;
 }
+.homepage-freeoffer-section a:hover {
+  color: #dd3500;
+}
+.homepage-freeoffer-section a:hover {
+  color: white;
+  background-color: #75c15b;
+}
 
 .homepage-information-section {
   padding: 139px 0;
@@ -1135,7 +1136,6 @@ a {
   font-family: "Unna", serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.75;
   font-weight: 700;
 }
 .homepage-information-section a {
@@ -1167,7 +1167,6 @@ a {
   font-family: "Unna", serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
   color: #ff5d2a;
 }
 .homepage-information-section i {
@@ -1207,7 +1206,6 @@ a {
   color: #000000;
   font-family: "Unna", serif;
   font-size: 55px;
-  line-height: 1.75;
   font-weight: 700;
   color: white;
 }
@@ -1222,6 +1220,7 @@ a {
 }
 .contactus-page-top-section .contactus-page-top-titles svg {
   stroke: white;
+  margin-bottom: 20px;
 }
 
 .contactus-page-contact-information-section {
@@ -1264,7 +1263,6 @@ a {
   font-family: "Unna", serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.75;
 }
 .contactus-page-getintouch-section .contactus-page-getintouch-section-box form input {
   outline: none;
@@ -1313,8 +1311,200 @@ a {
   color: white;
 }
 
-.footer {
+.blog-page-top-section {
+  padding: 150px 0px;
+  background-image: url(../img/bg-image-5.jpg);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.blog-page-top-section .blog-page-top-titles {
+  max-width: 700px;
+}
+.blog-page-top-section .blog-page-top-titles h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+}
+.blog-page-top-section .blog-page-top-titles h5 {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+  color: white;
+  text-align: center;
+}
+.blog-page-top-section .blog-page-top-titles svg {
+  stroke: white;
+  margin-bottom: 20px;
+}
+
+.blog-page-cardwrapper-section {
+  padding: 130px 220px;
+}
+.blog-page-cardwrapper-section p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #ff5d2a;
+  font-weight: 500;
+}
+.blog-page-cardwrapper-section hr {
+  width: 45px;
+}
+.blog-page-cardwrapper-section .blog-page-card-link {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  transition: 0.5s;
+  text-align: center;
+  line-height: 1.1em;
+}
+.blog-page-cardwrapper-section .blog-page-card-link:hover {
+  color: #ff5d2a;
+}
+.blog-page-cardwrapper-section .blog-page-cardwrapper-nav {
+  height: 48px;
+}
+.blog-page-cardwrapper-section .blog-page-cardwrapper-nav a {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  margin: 0px 20px;
+}
+.blog-page-cardwrapper-section .blog-page-cardwrapper-nav a:hover {
+  background-color: #ff5d2a;
+  padding: 10px 20px;
+  margin: 0px;
+  color: white;
+  border-radius: 50%;
+}
+.blog-page-cardwrapper-section .blog-page-cardwrapper-nav .blog-page-cardwrapper-nav-selected {
+  background-color: #ff5d2a;
+  padding: 10px 20px;
+  margin: 0px;
+  color: white;
+  border-radius: 50%;
+}
+
+.about-page-top-section {
+  padding: 150px 0px;
+  background-image: url(../img/bg-image-5.jpg);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.about-page-top-section .about-page-top-titles {
+  max-width: 700px;
+}
+.about-page-top-section .about-page-top-titles h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+}
+.about-page-top-section .about-page-top-titles h5 {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+  color: white;
+  text-align: center;
+}
+.about-page-top-section .about-page-top-titles svg {
+  stroke: white;
+  margin-bottom: 20px;
+}
+
+.about-page-aboutme-section {
   padding: 130px 0px;
+}
+.about-page-aboutme-section .about-page-aboutme-image {
+  background-image: url(../img/counter-img-719x609.png);
+  height: 609px;
+}
+.about-page-aboutme-section h3 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 36px;
+  font-weight: 400;
+  width: 370px;
+}
+.about-page-aboutme-section p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.about-page-aboutme-section a {
+  color: #ff5d2a;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  background-color: #ff5d2a;
+  color: white;
+  transition: 0.5s;
+  padding: 17px 30px;
+  border-radius: 5px;
+  font-weight: 900;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.about-page-aboutme-section a:hover {
+  color: #dd3500;
+}
+.about-page-aboutme-section a:hover {
+  color: white;
+  background-color: #75c15b;
+}
+
+.about-page-advantage-section {
+  padding: 130px 0px;
+}
+.about-page-advantage-section .about-page-advantage-oneadvantage:hover i {
+  transform: translateY(-5px);
+}
+.about-page-advantage-section .about-page-advantage-oneadvantage i {
+  font-size: 50px;
+  margin-bottom: 10px;
+  transition: 0.5s;
+}
+.about-page-advantage-section .about-page-advantage-oneadvantage h4 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 31px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.about-page-advantage-section .about-page-advantage-oneadvantage p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.about-page-advantage-section .about-page-advantage-oneadvantage span {
+  color: #ff5d2a;
+}
+
+.footer {
+  padding: 105px 0px;
   box-sizing: content-box;
   background-image: url(../img/bg-image-2.jpg);
   height: 30vh;
@@ -1327,7 +1517,6 @@ a {
   font-family: "Unna", serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.75;
   font-weight: 700;
   color: white;
 }

@@ -1,0 +1,83 @@
+.about-page-top-section {
+  padding: 150px 0px;
+  background-image: url(../img/bg-image-5.jpg);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  .about-page-top-titles {
+    max-width: 700px;
+
+    h2 {
+      @include h2-heading;
+      color: white;
+    }
+    h5 {
+      @include Roboto-subtitles;
+      color: white;
+      text-align: center;
+    }
+    svg {
+      stroke: white;
+      margin-bottom: 20px;
+    }
+  }
+}
+.about-page-aboutme-section {
+  padding: 130px 0px;
+  .about-page-aboutme-image {
+    background-image: url(../img/counter-img-719x609.png);
+
+    height: 609px;
+  }
+  h3 {
+    @include h3-heading;
+    width: 370px;
+  }
+  p {
+    @include paragraph;
+  }
+  a {
+    @include link;
+    background-color: $color-orenge-light;
+    color: white;
+    transition: 0.5s;
+    padding: 17px 30px;
+    border-radius: 5px;
+    font-weight: 900;
+    width: fit-content;
+
+    &:hover {
+      color: white;
+      background-color: $color-green-light;
+    }
+  }
+}
+.about-page-advantage-section {
+  padding: 130px 0px;
+  .about-page-advantage-oneadvantage:hover {
+    i {
+      transform: translateY(-5px);
+    }
+  }
+  .about-page-advantage-oneadvantage {
+
+    i {
+      font-size: 50px;
+      margin-bottom: 10px;
+      transition: 0.5s;
+    }
+    h4 {
+      @include h4-heading;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    p {
+      @include paragraph;
+    }
+    span {
+      color: $color-orenge-light;
+    }
+  }
+}

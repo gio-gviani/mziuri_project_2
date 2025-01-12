@@ -501,7 +501,7 @@
     text-align: center;
   }
   a {
-    @include links;
+    @include link;
     background-color: $color-orenge-light;
     color: white;
     transition: 0.5s;
@@ -509,6 +509,10 @@
     border-radius: 5px;
     font-weight: 900;
     width: fit-content;
+    &:hover {
+     color: white;
+      background-color: $color-green-light;
+    }
   }
 }
 .homepage-information-section {

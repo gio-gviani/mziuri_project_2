@@ -2,14 +2,13 @@
   color: #000000;
   font-family: $font-Unna;
   font-size: 70px;
-  line-height: 1.75;
   font-weight: 400;
 }
 @mixin h2-heading {
   color: #000000;
   font-family: $font-Unna;
   font-size: 55px;
-  line-height: 1.75;
+
   font-weight: 700;
 }
 @mixin h3-heading {
@@ -17,21 +16,18 @@
   font-family: $font-Unna;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.75;
 }
 @mixin h4-heading {
   color: #000000;
   font-family: $font-Unna;
   font-size: 31px;
   font-weight: 400;
-  line-height: 1.75;
 }
 @mixin h5-heading {
   color: #000000;
   font-family: $font-Unna;
   font-size: 20px;
   font-weight: 400;
-  line-height: 1.75;
 }
 @mixin h6-heading {
   color: #000000;

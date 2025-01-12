@@ -1,3 +1,82 @@
 .contactus-page-top-section {
-    
+  padding: 150px 0px;
+  background-image: url(../img/bg-image-5.jpg);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  .contactus-page-top-titles {
+    max-width: 700px;
+
+    h2 {
+      @include h2-heading;
+      color: white;
+    }
+    h5 {
+      @include Roboto-subtitles;
+      color: white;
+      text-align: center;
+    }
+    svg {
+      stroke: white;
+    }
+  }
+}
+.contactus-page-contact-information-section {
+  padding: 105px 0px;
+  background-color: #f6f6f6;
+
+  h5 {
+    @include Roboto-subtitles;
+  }
+  p {
+    @include paragraph;
+  }
+  a {
+    @include paragraph;
+    font-size: 36px;
+    font-weight: 600;
+    color: black;
+  }
+}
+.contactus-page-getintouch-section {
+  padding: 130px 0px;
+  .contactus-page-getintouch-section-box {
+    max-width: 1200px;
+    h3 {
+      @include h3-heading;
+    }
+    form {
+      input {
+        outline: none;
+        border: none;
+        width: 100%;
+        @include Roboto-subtitles;
+      }
+      i {
+        color: $color-orenge-light;
+        height: fit-content;
+        margin-right: 10px;
+        margin-top: 11px;
+      }
+      textarea {
+        width: 100%;
+        @include Roboto-subtitles;
+        border: none;
+        outline: none;
+      }
+      button {
+        background-color: $color-orenge-light;
+
+        @include link;
+        color: white;
+        font-weight: 900;
+        padding: 13px 50px;
+        &:hover {
+          background-color: $color-green-light;color: white;
+        }
+      }
+    }
+  }
 }

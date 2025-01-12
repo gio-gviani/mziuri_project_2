@@ -1,7 +1,23 @@
+*::selection {
+  background-color: $color-orenge-light;
+  color: white;
+}
+.goup-link {
+    background-color: $color-orenge-light;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s;
+    border-radius: 4px;
+    &:hover {
+        background-color: $color-green-light;
+    }
+  
+}
+
+
 @import "header";
 @import "offcanvas";
 @import "home-page";
 @import "contactus-page";
 @import "footer";
-
-

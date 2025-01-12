@@ -171,6 +171,27 @@ a {
     opacity: 0;
   }
 }
+*::-moz-selection {
+  background-color: #ff5d2a;
+  color: white;
+}
+*::selection {
+  background-color: #ff5d2a;
+  color: white;
+}
+
+.goup-link {
+  background-color: #ff5d2a;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+.goup-link:hover {
+  background-color: #75c15b;
+}
+
 .header {
   position: sticky;
   top: 0px;
@@ -1169,6 +1190,127 @@ a {
 }
 .homepage-information-section form button i {
   color: #ff5d2a;
+}
+
+.contactus-page-top-section {
+  padding: 150px 0px;
+  background-image: url(../img/bg-image-5.jpg);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+.contactus-page-top-section .contactus-page-top-titles {
+  max-width: 700px;
+}
+.contactus-page-top-section .contactus-page-top-titles h2 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 55px;
+  line-height: 1.75;
+  font-weight: 700;
+  color: white;
+}
+.contactus-page-top-section .contactus-page-top-titles h5 {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+  color: white;
+  text-align: center;
+}
+.contactus-page-top-section .contactus-page-top-titles svg {
+  stroke: white;
+}
+
+.contactus-page-contact-information-section {
+  padding: 105px 0px;
+  background-color: #f6f6f6;
+}
+.contactus-page-contact-information-section h5 {
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+}
+.contactus-page-contact-information-section p {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.contactus-page-contact-information-section a {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+}
+
+.contactus-page-getintouch-section {
+  padding: 130px 0px;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box {
+  max-width: 1200px;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box h3 {
+  color: #000000;
+  font-family: "Unna", serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box form input {
+  outline: none;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box form i {
+  color: #ff5d2a;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-right: 10px;
+  margin-top: 11px;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box form textarea {
+  width: 100%;
+  font-size: 20px;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  color: #000000;
+  line-height: 1.75;
+  border: none;
+  outline: none;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box form button {
+  background-color: #ff5d2a;
+  color: #ff5d2a;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: white;
+  font-weight: 900;
+  padding: 13px 50px;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box form button:hover {
+  color: #dd3500;
+}
+.contactus-page-getintouch-section .contactus-page-getintouch-section-box form button:hover {
+  background-color: #75c15b;
+  color: white;
 }
 
 .footer {

@@ -1,0 +1,147 @@
+.recipe-1-page-top-section {
+  padding: 150px 0px;
+  background-image: url(../img/bg-image-5.jpg);
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  .recipe-1-page-top-titles {
+    max-width: 700px;
+
+    h2 {
+      @include h2-heading;
+      color: white;
+    }
+    h5 {
+      @include Roboto-subtitles;
+      color: white;
+      text-align: center;
+    }
+    svg {
+      stroke: white;
+      margin-bottom: 20px;
+    }
+  }
+}
+.recipe-1-page-cardwrapper-section {
+  .recipe-1-page-categories {
+    a {
+      width: 100%;
+      height: 100%;
+      @include link;
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: 500;
+      transition: 0.5s;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  .recipe-1-page-cards-and-filter {
+    padding: 105px 0px;
+    .recipe-1-page-cards {
+      .recipe-1-page-card {
+        margin-top: 35px;
+        .recipe-1-page-card-image-box {
+          overflow: hidden;
+          position: relative;
+          padding: 0;
+          height: 276px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          p {
+            @include links;
+            font-weight: 900;
+
+            background-color: $color-orenge-light;
+            padding: 2px 13px;
+
+            position: absolute;
+            z-index: 2;
+            top: 20px;
+          }
+        }
+        .recipe-1-page-card-body {
+          a {
+            @include h4-heading;
+            transition: 0.5;
+            &:hover {
+              color: $color-orenge-light;
+            }
+          }
+          p {
+            @include paragraph;
+          }
+        }
+        i {
+          color: rgba(0, 0, 0, 0.5);
+        }
+        h6 {
+          @include Roboto-subtitles;
+          font-weight: 300;
+          font-size: 18px;
+        }
+      }
+      .recipes-1-page-cards-nav {
+        height: 48px;
+        margin-top: 35px;
+        a {
+          @include paragraph;
+          margin: 0px 20px;
+          &:hover {
+            background-color: $color-orenge-light;
+            padding: 10px 20px;
+            margin: 0px;
+            color: white;
+            border-radius: 50%;
+          }
+        }
+        .recipes-1-page-cards-nav-selected {
+          background-color: $color-orenge-light;
+          padding: 10px 20px;
+          margin: 0px;
+          color: white;
+          border-radius: 50%;
+        }
+      }
+    }
+    .recipe-1-page-filter {
+      margin-top: 35px;
+
+      height: fit-content;
+      h4 {
+        @include h4-heading;
+      }
+      input {
+        border: none;
+        outline: none;
+        @include Roboto-subtitles;
+        font-weight: 300;
+        color: black;
+      }
+      i {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+      a {
+        @include links;
+        width: 100%;
+  
+        color: white;
+        display: block;
+        text-align: center;
+        padding: 17px;
+        border-radius: 4px;
+        background-color: $color-orenge-light;
+        transition: 0.5s;
+        &:hover {
+          background-color: $color-green-light;
+        }
+      }
+    }
+  }
+}

@@ -3,20 +3,22 @@
   color: white;
 }
 .goup-link {
-    background-color: $color-orenge-light;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    transition: 0.5s;
-    border-radius: 4px;
-    &:hover {
-        background-color: $color-green-light;
-    }
-  
+  background-color: $color-orenge-light;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: 0.5s;
+  border-radius: 4px;
+  &:hover {
+    background-color: $color-green-light;
+  }
+}
+.row {
+  margin: 0;
 }
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @import "header";
@@ -25,4 +27,7 @@
 @import "contactus-page";
 @import "blog-page";
 @import "about-page";
+@import "recipes-1-page";
+@import "recipes-2-page";
+@import "single-recipe-page";
 @import "footer";

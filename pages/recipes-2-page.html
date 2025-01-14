@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipes 2</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+    <!-- Owl carusel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- Owl carusel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER __________________________ -->
+
+    <header class="header" id="header-id">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../img/logo-inverse-216x70.png"
+              alt="main-logo"
+              width="108"
+              height="35"
+            />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse d-flex justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <div></div>
+            <ul class="navbar-nav d-flex gap-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active header-nav-links"
+                  aria-current="page"
+                  href="../index.html"
+                  >HOME</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle header-nav-links header-nav-links-selected"
+                  href="single-recipe-page.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  RECIPES
+                </a>
+                <ul
+                  class="dropdown-menu p-3 border-0 shadow-lg"
+                  style="padding: 12px 15px !important"
+                >
+                  <li>
+                    <a class="dropdown-item" href="recipes-1-page.html"
+                      >Recipes 1</a
+                    >
+                  </li>
+                  <!--TODO davamato peijebis linkebi-->
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Recipes 2</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="single-recipe-page.html"
+                      >Single Recipe</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active header-nav-links"
+                  aria-current="page"
+                  href="#"
+                  >ABOUT ME</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle header-nav-links"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+
+                <div
+                  class="dropdown-menu pages-dropdown border-0 shadow-lg p-3"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <div class="d-flex gap-4">
+                    <div class="d-inline-block">
+                      <h3 class="mb-2 header-dropdown-subtitles">Elements</h3>
+                      <div class="d-flex gap-4">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">Typography</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#">Buttons</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#">Forms</a></li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">Icon Lists</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >Counters & Accordions</a
+                            >
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Search Results</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="d-inline-block">
+                      <h3 class="mb-2 header-dropdown-subtitles">Pages</h3>
+                      <div class="d-flex gap-2">
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">Categories</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#">About</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li><a class="dropdown-item" href="#">My Team</a></li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <a class="dropdown-item" href="#">404 Page</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Coming Soon</a>
+                          </li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                            <a class="dropdown-item" href="#">Privacy policy</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle header-nav-links"
+                  href="blog-page.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  BLOG
+                </a>
+                <ul class="dropdown-menu border-0 shadow-lg">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      style="padding: 0px"
+                      href="blog-page.html"
+                      >Blog post</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active header-nav-links"
+                  aria-current="page"
+                  href="contactus-page.html"
+                  >CONTACT US</a
+                >
+              </li>
+            </ul>
+
+            <form class="d-flex" role="search">
+              <!-- Button to trigger Offcanvas -->
+              <a
+                class="header-burger"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample"
+              >
+                <span class="middle-line"></span>
+              </a>
+
+              <p class="header-menu-paragraph ms-3">MENU</p>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HEADER __________________________ -->
+
+    <!-- recipe-2-page-page-top-section _______________________________________ -->
+    <section class="recipe-2-page-top-section">
+      <div
+        class="recipe-2-page-top-titles d-flex flex-column align-items-center justify-content-center m-auto"
+      >
+        <svg
+          class="breadcrumbs-custom-line"
+          width="70"
+          height="8"
+          viewBox="0 0 70 8"
+          fill="none"
+        >
+          <path
+            d="M0 1C5 1 5 7 9.92 7C14.84 7 14.92 1 19.85 1C24.78 1 24.85 7 29.77 7C34.69 7 34.77 1 39.71 1C44.65 1 44.71 7 49.63 7C54.55 7 54.63 1 59.57 1C64.51 1 64.57 7 69.5 7"
+            stroke-width="1.98"
+            stroke-miterlimit="10"
+          ></path>
+        </svg>
+        <h2>Recipes 2</h2>
+        <h5>
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur. Duis aute irure dolor in
+          reprehenderit.
+        </h5>
+      </div>
+    </section>
+    <!-- recipe-2-page-top-section _______________________________________ -->
+
+    <section class="conteiner-fluid recipe-2-page-cardwrapper-section">
+      <div class="row recipe-2-page-categories">
+        <div class="col-3 border-end border-dark-subtle">
+          <a href="#" class="p-5 d-block text-center">All recipe</a>
+        </div>
+        <div class="col-3 border-end border-dark-subtle">
+          <a href="#" class="p-5 d-block text-center">FOR VEGANS</a>
+        </div>
+        <div class="col-3 border-end border-dark-subtle">
+          <a href="#" class="p-5 d-block text-center">SUGAR-FREE</a>
+        </div>
+        <div class="col-3">
+          <a href="#" class="p-5 d-block text-center">DESSERTS</a>
+        </div>
+      </div>
+
+      <div class="recipe-2-page-cards-and-filter container row">
+        <div class="recipe-2-page-cards col-8 row">
+          <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
+            <div class="recipe-2-page-card-image-box">
+              <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
+              <p>SALADS</p>
+            </div>
+            <div
+              class="recipe-2-page-card-body px-5 py-4 d-flex flex-column gap-4"
+            >
+              <a href="single-recipe-page.html"
+                >Southern-Style Chicken Salad with Cranberry</a
+              >
+
+              <div class="d-flex gap-4">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>4</h6>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-calendar"></i>
+                  <h6>July 9, 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
+            <div class="recipe-2-page-card-image-box">
+              <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
+              <p>SALADS</p>
+            </div>
+            <div
+              class="recipe-2-page-card-body px-5 py-4 d-flex flex-column gap-4"
+            >
+              <a href="single-recipe-page.html"
+                >Southern-Style Chicken Salad with Cranberry</a
+              >
+
+              <div class="d-flex gap-4">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>4</h6>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-calendar"></i>
+                  <h6>July 9, 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
+            <div class="recipe-2-page-card-image-box">
+              <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
+              <p>SALADS</p>
+            </div>
+            <div
+              class="recipe-2-page-card-body px-5 py-4 d-flex flex-column gap-4"
+            >
+              <a href="single-recipe-page.html"
+                >Southern-Style Chicken Salad with Cranberry</a
+              >
+
+              <div class="d-flex gap-4">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>4</h6>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-calendar"></i>
+                  <h6>July 9, 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
+            <div class="recipe-2-page-card-image-box">
+              <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
+              <p>SALADS</p>
+            </div>
+            <div
+              class="recipe-2-page-card-body px-5 py-4 d-flex flex-column gap-4"
+            >
+              <a href="single-recipe-page.html"
+                >Southern-Style Chicken Salad with Cranberry</a
+              >
+
+              <div class="d-flex gap-4">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>4</h6>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-calendar"></i>
+                  <h6>July 9, 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
+            <div class="recipe-2-page-card-image-box">
+              <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
+              <p>SALADS</p>
+            </div>
+            <div
+              class="recipe-2-page-card-body px-5 py-4 d-flex flex-column gap-4"
+            >
+              <a href="single-recipe-page.html"
+                >Southern-Style Chicken Salad with Cranberry</a
+              >
+
+              <div class="d-flex gap-4">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>4</h6>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-calendar"></i>
+                  <h6>July 9, 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
+            <div class="recipe-2-page-card-image-box">
+              <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
+              <p>SALADS</p>
+            </div>
+            <div
+              class="recipe-2-page-card-body px-5 py-4 d-flex flex-column gap-4"
+            >
+              <a href="single-recipe-page.html"
+                >Southern-Style Chicken Salad with Cranberry</a
+              >
+
+              <div class="d-flex gap-4">
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-heart"></i>
+                  <h6>4</h6>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <i class="fa-regular fa-calendar"></i>
+                  <h6>July 9, 2022</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="d-flex justify-content-center align-items-center recipes-2-page-cards-nav w-100"
+          >
+            <a href="#" class="recipe-2-page-cards-nav-selected">1</a>
+            <a href="#">2</a><a href="#">3</a>
+          </div>
+        </div>
+        <div class="recipe-2-page-filter col-4 p-5 shadow-lg">
+          <form action="">
+            <h4 class="my-4">Search Recipes</h4>
+            <div class="d-flex gap-2 align-items-center mt-5">
+              <i class="fa-solid fa-hand-point-up"></i>
+              <input type="text" placeholder="Keyword(s)" />
+            </div>
+            <hr />
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fa-solid fa-bars"></i>
+              <input type="text" placeholder="Category" />
+            </div>
+            <hr />
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fa-solid fa-burger"></i>
+              <input type="text" placeholder="Cuisine" />
+            </div>
+            <hr class="mb-5" />
+            <a href="#">SEARCH</a>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTERRRR ____________________________________________________________ -->
+
+    <footer class="footer">
+      <div class="container d-flex gap-5 justify-content-evenly">
+        <div class="d-flex flex-column">
+          <h3 class="mb-3">About Me</h3>
+          <p class="mb-4">
+            I’m Kate Johnson, an award-winning chef and food vlogger with more
+            than 10 years of professional experience in cooking.
+          </p>
+          <div class="d-flex gap-2">
+            <a href="#" class="border border-light rounded-circle footer-links"
+              ><i class="fa-brands fa-facebook text-light"></i
+            ></a>
+            <a href="#" class="border border-light rounded-circle footer-links"
+              ><i class="fa-brands fa-twitter text-light"></i
+            ></a>
+            <a href="#" class="border border-light rounded-circle footer-links"
+              ><i class="fa-brands fa-instagram text-light"></i
+            ></a>
+            <a href="#" class="border border-light rounded-circle footer-links"
+              ><i class="fa-brands fa-pinterest text-light"></i
+            ></a>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <h3 class="mb-3">Popular Categories</h3>
+          <div class="d-flex justify-content-between">
+            <div class="d-flex flex-column gap-2">
+              <a href="#">Pizzas</a>
+              <a href="#">Seafood</a>
+              <a href="#">Salads</a>
+              <a href="#">Smoothies</a>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <a href="#">Meat</a>
+              <a href="#">Bread</a>
+              <a href="#">Asian Food</a>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column">
+          <h3 class="mb-3">Healthy Recipes</h3>
+          <div class="d-flex flex-column gap-2">
+            <a href="#">Sugar-Free</a>
+            <a href="#">For Vegans</a>
+            <a href="#">Asian Food</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FOOTERRRR ____________________________________________________________ -->
+
+    <!-- OFFCANVAS -->
+    <div
+      class="offcanvas offcanvas-end overflow-y-auto"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column align-items-center p-5">
+        <h4 class="fw-bold">About Me</h4>
+        <p class="text-center mt-3">
+          I’m Kate Johnson, an award-winning chef, YouTuber, and author of
+          GoodFood website, where I share my best recipes.
+        </p>
+        <hr class="w-50 m-auto my-3" />
+        <h4 class="mb-3">Hot Recipes</h4>
+        <div class="offcanvas-carusel mt-3">
+          <a href="#" class="btn btn-outline-dark">SEE ALL</a>
+
+          <div class="container p-0">
+            <input type="radio" name="slider" id="item-1" />
+            <label class="homepage-offcanvas-radio" for="item-1"></label>
+            <input type="radio" name="slider" id="item-2" />
+            <label class="homepage-offcanvas-radio" for="item-2"></label>
+            <input type="radio" name="slider" id="item-3" checked />
+            <label class="homepage-offcanvas-radio" for="item-3"></label>
+            <div class="cards">
+              <label
+                class="card shadow offcanvas-carusel-card-salad"
+                for="item-1"
+                id="song-1"
+              >
+                <div>
+                  <p>SALADS</p>
+                  <h4>Salads Green Pea Salad with Cheese</h4>
+                </div>
+              </label>
+              <label
+                class="card shadow offcanvas-carusel-card-bread"
+                for="item-2"
+                id="song-2"
+              >
+                <div>
+                  <p>BREAD</p>
+                  <h4>Crusty No-Knead Artisan Bread</h4>
+                </div>
+              </label>
+              <label
+                class="card shadow offcanvas-carusel-card-vegan"
+                for="item-3"
+                id="song-3"
+              >
+                <div>
+                  <p>FOR VEGANS</p>
+                  <h4>Cauliflower & Red Pepper Soup</h4>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- OFFCANVAS -->
+    <!-- GO UP LINK ______________________________________________ -->
+
+    <a href="#" class="goup-link"
+      ><svg viewBox="0 0 300 300" width="50px" height="50px">
+        <path />
+        <line
+          x1="-22.26695"
+          y1="18.67888"
+          x2="27.73305"
+          y2="-31.32112"
+          transform="translate(122.26695 156.32112)"
+          stroke="white"
+          stroke-width="20"
+          stroke-linecap="round"
+        />
+        <line
+          x1="50"
+          y1="50"
+          x2="0"
+          y2="0"
+          transform="translate(150 125)"
+          stroke="white"
+          stroke-width="20"
+          stroke-linecap="round"
+        />
+      </svg>
+    </a>
+
+    <!-- GO UP LINK ______________________________________________ -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/fb0395600d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

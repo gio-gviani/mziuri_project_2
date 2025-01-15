@@ -220,6 +220,8 @@ a {
   line-height: 1.75;
   margin-bottom: 3px;
   transition: 0.1s ease-in;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .header .navbar .header-nav-links:hover {
   border-bottom: 3px solid #ff5d2a;
@@ -261,18 +263,31 @@ a {
 .header .navbar .dropdown .dropdown-menu .dropdown-divider {
   margin: 0;
 }
-.header .navbar .header-burger {
-  width: 30px;
+.header .navbar form .header-burger {
   height: 30px;
   position: relative;
 }
-.header .navbar .header-burger .middle-line {
+@media screen and (max-width: 991px) {
+  .header .navbar form .header-burger .middle-line {
+    display: none;
+  }
+  .header .navbar form .header-burger .middle-line::after {
+    display: none;
+  }
+  .header .navbar form .header-burger::after {
+    display: none;
+  }
+  .header .navbar form .header-burger:before {
+    display: none;
+  }
+}
+.header .navbar form .header-burger .middle-line {
   position: absolute;
   display: inline-block;
   width: 30px;
   height: 30px;
 }
-.header .navbar .header-burger .middle-line::after {
+.header .navbar form .header-burger .middle-line::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -280,10 +295,7 @@ a {
   height: 2px;
   background-color: black;
 }
-.header .navbar .header-burger .middle-line:active::after {
-  animation: burger-bar-anim-middle 0.5s ease-in forwards;
-}
-.header .navbar .header-burger::after {
+.header .navbar form .header-burger::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -292,7 +304,7 @@ a {
   height: 2px;
   background-color: black;
 }
-.header .navbar .header-burger::before {
+.header .navbar form .header-burger::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -300,10 +312,13 @@ a {
   height: 2px;
   background-color: black;
 }
-.header .navbar .header-burger:active::after {
+.header .navbar form .header-burger:active .middle-line::after {
+  animation: burger-bar-anim-middle 0.5s ease-in forwards;
+}
+.header .navbar form .header-burger:active::after {
   animation: burger-bar-anim-top 0.5s ease forwards;
 }
-.header .navbar .header-burger:active::before {
+.header .navbar form .header-burger:active::before {
   animation: burger-bar-anim-bottom 0.5s ease forwards;
 }
 .header .navbar .header-menu-paragraph {
@@ -537,12 +552,13 @@ a {
   display: flex;
   flex-direction: column;
   position: absolute;
-  width: 150px;
+  gap: 20px;
+  width: 130px;
   transform: translateY(-50%);
-  top: 50% !important;
-  right: 0px !important;
+  top: 50%;
+  right: 0px;
   left: auto;
-  bottom: auto;
+  bottom: inherit;
   margin: 0;
 }
 .homepage-main-carusel-section .carousel-indicators .homepage-main-carusel-buttons {
@@ -550,7 +566,6 @@ a {
   width: fit-content;
   height: 20px;
   background-color: transparent;
-  margin-bottom: 30px;
   border: 0;
   display: flex;
   align-items: center;
@@ -573,8 +588,23 @@ a {
   color: #ffffff;
   line-height: 1.75;
 }
+@media screen and (max-width: 991px) {
+  .homepage-main-carusel-section .carousel-indicators {
+    transform: translate(-50%, 0);
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    right: auto;
+    flex-direction: row;
+  }
+  .homepage-main-carusel-section .carousel-indicators .homepage-main-carusel-buttons p {
+    display: none;
+  }
+}
 .homepage-main-carusel-section .carousel-inner .carousel-item img {
   height: 95vh !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .homepage-main-carusel-section .carousel-inner .carousel-item .carousel-caption {
   transform: translate(-50%);
@@ -651,8 +681,8 @@ a {
 }
 
 .homepage-popular-categories-section {
-  height: 70vh;
   background-image: url(../img/bg-image-2.jpg);
+  background-size: cover;
 }
 .homepage-popular-categories-section a {
   width: -moz-fit-content;
@@ -661,11 +691,11 @@ a {
 .homepage-popular-categories-section form {
   margin: 0;
 }
-.homepage-popular-categories-section form .col,
+.homepage-popular-categories-section form .col, .homepage-popular-categories-section form .col-md,
 .homepage-popular-categories-section form .col-5 {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
-  padding: 30px 45px;
+  padding: 30px 15px;
 }
 .homepage-popular-categories-section form i {
   color: white;
@@ -2113,12 +2143,46 @@ a {
   border: none;
   outline: none;
 }
+.single-recipe-page-main-section .single-recipe-page-main-side-box form input::-moz-placeholder {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box form input::placeholder {
+  color: #353535;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
 .single-recipe-page-main-section .single-recipe-page-main-side-box form a {
   color: black;
   transition: 0.5s;
 }
 .single-recipe-page-main-section .single-recipe-page-main-side-box form a:hover {
   color: #ff5d2a;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box form button {
+  background-color: #ff5d2a;
+  color: #ff5d2a;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+  color: white;
+  font-weight: 900;
+  padding: 13px 50px;
+  width: 100%;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box form button:hover {
+  color: #dd3500;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box form button:hover {
+  background-color: #75c15b;
+  color: white;
 }
 .single-recipe-page-main-section .single-recipe-page-main-side-box h4 {
   color: #000000;
@@ -2170,6 +2234,40 @@ a {
   color: #ff5d2a;
   font-weight: 400;
   margin-top: 12px;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box .single-recipe-page-main-side-box-getbook {
+  background-image: url(../img/blog-post-8.jpg);
+  background-size: contain;
+  height: 385px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box .single-recipe-page-main-side-box-getbook:hover a {
+  background-blend-mode: multiply;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box .single-recipe-page-main-side-box-getbook a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.single-recipe-page-main-section .single-recipe-page-main-side-box .single-recipe-page-main-side-box-getbook a p {
+  font-size: 15px;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  color: #ffffff;
+  line-height: 1.75;
+  color: white;
+  position: absolute;
+  font-weight: 700;
+  text-align: center;
+  top: 20px;
+  left: 20px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: #ff5d2a;
+  transition: 0.5s;
 }
 
 .footer {

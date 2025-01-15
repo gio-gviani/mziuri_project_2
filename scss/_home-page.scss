@@ -2,23 +2,24 @@
   position: relative;
 
   .carousel-indicators {
+    
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 150px;
+    gap: 20px;
+    width: 130px;
     transform: translateY(-50%);
-    top: 50% !important;
-
-    right: 0px !important;
+    top: 50%;
+    right: 0px;
     left: auto;
-    bottom: auto;
+    bottom: inherit;
 
     margin: 0;
     .homepage-main-carusel-buttons {
       width: fit-content;
       height: 20px;
       background-color: transparent;
-      margin-bottom: 30px;
+
       border: 0;
       display: flex;
       align-items: center;
@@ -37,11 +38,27 @@
         @include links;
       }
     }
+
+    @media screen and (max-width: 991px) {
+      transform: translate(-50%, 0);
+      top: auto;
+      bottom: 20px;
+      left: 50%;
+      right: auto;
+      flex-direction: row;
+
+      .homepage-main-carusel-buttons {
+        p {
+          display: none;
+        }
+      }
+    }
   }
   .carousel-inner {
     .carousel-item {
       img {
         height: 95vh !important;
+        object-fit: cover;
       }
       .carousel-caption {
         transform: translate(-50%);
@@ -118,20 +135,21 @@
 }
 
 .homepage-popular-categories-section {
-  height: 70vh;
+
   background-image: url(../img/bg-image-2.jpg);
+  background-size: cover;
   a {
     width: fit-content;
   }
   form {
     margin: 0;
 
-    .col,
+    .col,.col-md,
     .col-5 {
       border-bottom: 1px solid white;
 
       border-right: 1px solid white;
-      padding: 30px 45px;
+      padding: 30px 15px;
     }
 
     i {
@@ -172,6 +190,10 @@
       }
       i {
         color: black;
+      }
+      @media screen and (min-width: 991px) {
+
+        
       }
     }
   }
@@ -510,7 +532,7 @@
     font-weight: 900;
     width: fit-content;
     &:hover {
-     color: white;
+      color: white;
       background-color: $color-green-light;
     }
   }

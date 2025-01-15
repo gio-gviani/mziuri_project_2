@@ -27,33 +27,48 @@
   </head>
   <body>
     <!-- HEADER __________________________ -->
-
     <header class="header" id="header-id">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="../img/logo-inverse-216x70.png"
-              alt="main-logo"
-              width="108"
-              height="35"
-            />
-          </a>
+          <div class="d-flex gap-3">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="../img/main-logo.png"
+                alt="main-logo"
+                width="108"
+                height="35"
+              />
+            </a>
+          </div>
+          <form class="d-md-flex d-lg-none" role="search">
+            <!-- Button to trigger Offcanvas -->
+            <a
+              class="header-burger d-flex gap-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <span class="middle-line"></span>
+
+              <p class="header-menu-paragraph ms-5">MENU</p>
+            </a>
+          </form>
 
           <div
-            class="collapse navbar-collapse d-flex justify-content-between"
+            class="collapse navbar-collapse d-lg-flex justify-content-between"
             id="navbarSupportedContent"
           >
             <div></div>
@@ -214,25 +229,24 @@
                 <a
                   class="nav-link active header-nav-links header-nav-links-selected"
                   aria-current="page"
-                  href="#"
+                  href="contactus-page.html"
                   >CONTACT US</a
                 >
               </li>
             </ul>
-
-            <form class="d-flex" role="search">
+            <form class="d-lg-flex d-md-none" role="search">
               <!-- Button to trigger Offcanvas -->
               <a
-                class="header-burger"
+                class="header-burger d-flex gap-3"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample"
               >
                 <span class="middle-line"></span>
-              </a>
 
-              <p class="header-menu-paragraph ms-3">MENU</p>
+                <p class="header-menu-paragraph ms-5">MENU</p>
+              </a>
             </form>
           </div>
         </div>

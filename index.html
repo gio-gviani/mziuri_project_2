@@ -41,29 +41,45 @@
     <header class="header" id="header-id">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="img/main-logo.png"
-              alt="main-logo"
-              width="108"
-              height="35"
-            />
-          </a>
+          <div class="d-flex gap-3">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <a class="navbar-brand" href="#">
+              <img
+                src="img/main-logo.png"
+                alt="main-logo"
+                width="108"
+                height="35"
+              />
+            </a>
+          </div>
+          <form class="d-md-flex d-lg-none" role="search">
+            <!-- Button to trigger Offcanvas -->
+            <a
+              class="header-burger d-flex gap-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <span class="middle-line"></span>
+
+              <p class="header-menu-paragraph ms-5">MENU</p>
+            </a>
+          </form>
 
           <div
-            class="collapse navbar-collapse d-flex justify-content-between"
+            class="collapse navbar-collapse d-lg-flex justify-content-between"
             id="navbarSupportedContent"
           >
             <div></div>
@@ -231,20 +247,19 @@
                 >
               </li>
             </ul>
-
-            <form class="d-flex" role="search">
+            <form class="d-lg-flex d-md-none d-sm-none" role="search">
               <!-- Button to trigger Offcanvas -->
               <a
-                class="header-burger"
+                class="header-burger d-flex gap-3"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample"
               >
                 <span class="middle-line"></span>
-              </a>
 
-              <p class="header-menu-paragraph ms-3">MENU</p>
+                <p class="header-menu-paragraph ms-5">MENU</p>
+              </a>
             </form>
           </div>
         </div>
@@ -306,7 +321,7 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <a class="main-title" href="#">Bread</a>
               <!-- TODO davamato linki Single receptze-->
               <h4 class="mt-3">38 Recipes</h4>
@@ -332,7 +347,7 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <a class="main-title" href="#">Smoothies</a>
               <h4 class="mt-3">45 Recipes</h4>
               <a class="down-arrow-icon" href="#"
@@ -356,7 +371,7 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <a class="main-title" href="#">For Vegans</a>
               <h4 class="mt-3">67 Recipes</h4>
               <a class="down-arrow-icon" href="#"
@@ -380,7 +395,7 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <a class="main-title" href="#">Suger-Free</a>
               <h4 class="mt-3">58 Recipes</h4>
               <a class="down-arrow-icon" href="#"
@@ -407,25 +422,30 @@
 
     <section class="homepage-popular-categories-section">
       <form class="row">
-        <div class="col d-flex align-items-center">
+        <div class="col-md col-sm-12 d-flex flex-nowrap align-items-center">
           <i class="fa-solid fa-hand-point-up"></i>
-          <input type="text" placeholder="Keyword(s)" />
+          <input type="text" class="w-100" placeholder="Keyword(s)" />
         </div>
-        <div class="col d-flex align-items-center">
+        <div class="col-md col-sm-12 d-flex flex-nowrap align-items-center">
           <i class="fa-solid fa-bars"></i>
-          <input type="text" placeholder="Category" />
+          <input type="text" class="w-100" placeholder="Category" />
         </div>
-        <div class="col-5 d-flex justify-content-between align-items-center">
-          <div>
+        <div
+          class="col-md col-sm-12 d-flex flex-nowrap justify-content-between align-items-center"
+        >
+          <div class="d-flex align-items-center">
             <i class="fa-solid fa-burger"></i>
-            <input type="text" placeholder="Cuisine" />
+            <input type="text" class="w-100" placeholder="Cuisine" />
           </div>
-          <a href="#"><i class="fa-solid fa-search"></i> SEARCH</a>
+          <a href="#" class="d-flex flex-nowrap gap-2"
+            ><i class="fa-solid fa-search"></i>
+            <p class="d-md-none d-lg-block">SEARCH</p></a
+          >
         </div>
       </form>
 
       <div
-        class="px-3 d-flex justify-content-between homepage-popular-categories-topbar"
+        class="px-3 d-flex flex-wrap justify-content-between homepage-popular-categories-topbar"
       >
         <h6>POPULAR CATEGORIES</h6>
         <div class="d-flex gap-3 align-items-center custom-nav">
@@ -494,7 +514,7 @@
       class="latest-recipes-section d-flex flex-column align-items-center"
     >
       <h2 class="m-5">Latest Recipes</h2>
-      <div class="latest-recipes-cardwrapper d-flex flex-wrap gap-5">
+      <div class="latest-recipes-cardwrapper d-flex flex-wrap justify-content-center gap-5">
         <div class="card">
           <!-- TODO davamato linki -->
           <a href="#">
@@ -1043,6 +1063,8 @@
           responsive: {
             0: { items: 1 },
             600: { items: 2 },
+            700: { items: 3 },
+            800: { items: 4 },
             1000: { items: 5 },
           },
         });

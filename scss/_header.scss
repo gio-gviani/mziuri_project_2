@@ -11,6 +11,7 @@
       @include links;
       margin-bottom: 3px;
       transition: 0.1s ease-in;
+      width: fit-content;
       &:hover {
         border-bottom: 3px solid $color-orenge-light;
         margin-bottom: 0px;
@@ -51,20 +52,35 @@
         }
       }
     }
-
-    .header-burger {
-      width: 30px;
-      height: 30px;
-
-      position: relative;
-
-      .middle-line {
-        position: absolute;
-        display: inline-block;
-        width: 30px;
+    form {
+      .header-burger {
         height: 30px;
 
-        &::after {
+        position: relative;
+        
+        @media screen and (max-width: 991px) {
+          .middle-line {
+            display: none;
+            &::after {
+              display: none;
+            }
+          }
+          &::after {
+            display: none;
+          }
+          &:before {
+            display: none;
+          }
+          
+        }
+
+        .middle-line {
+          position: absolute;
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+        }
+        .middle-line::after {
           content: "";
           position: absolute;
           top: 10px;
@@ -72,33 +88,34 @@
           height: 2px;
           background-color: black;
         }
-        &:active::after {
-          animation: burger-bar-anim-middle 0.5s ease-in forwards;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 30px;
+          height: 2px;
+          background-color: black;
         }
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 30px;
-        height: 2px;
-        background-color: black;
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        top: 20px;
-        width: 30px;
-        height: 2px;
-        background-color: black;
-      }
-      &:active::after {
-        animation: burger-bar-anim-top 0.5s ease forwards;
-      }
-      &:active::before {
-        animation: burger-bar-anim-bottom 0.5s ease forwards;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 20px;
+          width: 30px;
+          height: 2px;
+          background-color: black;
+        }
+        &:active {
+          .middle-line::after {
+            animation: burger-bar-anim-middle 0.5s ease-in forwards;
+          }
+        }
+        &:active::after {
+          animation: burger-bar-anim-top 0.5s ease forwards;
+        }
+        &:active::before {
+          animation: burger-bar-anim-bottom 0.5s ease forwards;
+        }
       }
     }
     .header-menu-paragraph {

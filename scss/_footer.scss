@@ -1,8 +1,8 @@
 .footer {
-    padding: 105px 0px;
+    padding: 105px 60px;
     box-sizing: content-box;
   background-image: url(../img/bg-image-2.jpg);
-  height: 30vh;
+background-size: cover;
   i {
     font-size: 22px;
   }
@@ -14,7 +14,8 @@
   p {
     @include paragraph;
     color: white;
-    width: 330px;
+    max-width: 330px;
+    width: fit-content;
   }
   a {
     @include paragraph;

@@ -2,7 +2,6 @@
   position: relative;
 
   .carousel-indicators {
-    
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -15,6 +14,7 @@
     bottom: inherit;
 
     margin: 0;
+
     .homepage-main-carusel-buttons {
       width: fit-content;
       height: 20px;
@@ -38,7 +38,6 @@
         @include links;
       }
     }
-
     @media screen and (max-width: 991px) {
       transform: translate(-50%, 0);
       top: auto;
@@ -135,7 +134,6 @@
 }
 
 .homepage-popular-categories-section {
-
   background-image: url(../img/bg-image-2.jpg);
   background-size: cover;
   a {
@@ -144,7 +142,8 @@
   form {
     margin: 0;
 
-    .col,.col-md,
+    .col,
+    .col-md,
     .col-5 {
       border-bottom: 1px solid white;
 
@@ -190,10 +189,6 @@
       }
       i {
         color: black;
-      }
-      @media screen and (min-width: 991px) {
-
-        
       }
     }
   }
@@ -412,9 +407,10 @@
 }
 .homepage-aboutme-section {
   padding: 130px 0px;
+
   .homepage-aboutme-image {
     background-image: url(../img/counter-img-719x609.png);
-
+    background-size: cover;
     height: 609px;
   }
   h2 {
@@ -427,14 +423,18 @@
     @include numbers-titles;
     display: block;
     margin-bottom: 10px;
+    text-wrap: nowrap;
   }
 }
 
 .homepage-featuredrecipes-section {
+
+
   background-image: url(../img/bg-image-2.jpg);
-  .homepage-featuredrecipes-section-double-bg {
+  .homepage-featuredrecipes-section-double-bg {  padding: 130px 0px;
     background-image: url(../img/bg-image-10.jpg);
     background-size: cover;
+    box-sizing: border-box;
 
     .homepage-featuredrecipes-corusel-box {
       position: relative;
@@ -453,13 +453,15 @@
         }
       }
       .homepage-featuredrecipes-carusel {
-        padding: 20px;
         .item {
           .card {
-            width: 500px !important;
-            transform: translateX(60px) !important;
+            height: 100%;
+
+            width: 100%;
+
             .card-body {
               padding: 30px 40px;
+
               h4 {
                 @include h4-heading;
               }
@@ -508,6 +510,7 @@
 .homepage-freeoffer-section {
   background-image: url(../img/bg-image-9.jpg);
   background-size: cover;
+  background-position: right;
   padding: 105px 0;
   h4 {
     @include h4-heading;
@@ -535,6 +538,9 @@
       color: white;
       background-color: $color-green-light;
     }
+  }
+  @media screen and (max-width: 768px) {
+    background-image: none;
   }
 }
 .homepage-information-section {

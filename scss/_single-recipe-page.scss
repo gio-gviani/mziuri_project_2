@@ -27,6 +27,11 @@
 .single-recipe-page-main-section {
   padding: 130px 0px;
   .single-recipe-page-main-middle-box {
+    img {
+      width: 100%;
+      max-width: 800px;
+    
+    }
     .single-recipe-page-main-specifics {
       i {
         font-size: 18px;
@@ -191,7 +196,7 @@
     }
   }
   .single-recipe-page-main-side-box {
-    padding: 60px 0px 0px 130px;
+  
     form {
       input {
         border: none;
@@ -262,7 +267,7 @@
     }
     .single-recipe-page-main-side-box-getbook {
       background-image: url(../img/blog-post-8.jpg);
-      background-size: contain;
+      background-size: cover;
       height: 385px;
       border-radius: 4px;
       transition: 0.5s;

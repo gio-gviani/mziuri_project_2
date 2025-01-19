@@ -33,7 +33,7 @@
   }
   h3 {
     @include h3-heading;
-    width: 370px;
+    max-width: 370px;
   }
   p {
     @include paragraph;

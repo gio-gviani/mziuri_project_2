@@ -32,21 +32,21 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <div class="d-flex gap-3">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
             <a class="navbar-brand" href="#">
               <img
-                src="../img/main-logo.png"
+                src="../img/logo-inverse-216x70.png"
                 alt="main-logo"
                 width="108"
                 height="35"
@@ -69,7 +69,7 @@
           </form>
 
           <div
-            class="collapse navbar-collapse d-lg-flex justify-content-between "
+            class="collapse navbar-collapse d-lg-flex justify-content-between"
             id="navbarSupportedContent"
           >
             <div></div>
@@ -102,10 +102,12 @@
                       >Recipes 1</a
                     >
                   </li>
-                  <!--TODO davamato peijebis linkebi-->
+   
                   <li><hr class="dropdown-divider" /></li>
                   <li>
-                    <a class="dropdown-item" href="recipes-2-page.html">Recipes 2</a>
+                    <a class="dropdown-item" href="recipes-2-page.html"
+                      >Recipes 2</a
+                    >
                   </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
@@ -242,7 +244,7 @@
                 data-bs-target="#offcanvasExample"
                 aria-controls="offcanvasExample"
               >
-                <span class="middle-line "></span>
+                <span class="middle-line"></span>
 
                 <p class="header-menu-paragraph ms-5">MENU</p>
               </a>
@@ -298,8 +300,31 @@
         </div>
       </div>
 
-      <div class="recipe-2-page-cards-and-filter container row">
-        <div class="recipe-2-page-cards col-8 row">
+      <div
+        class="recipe-2-page-cards-and-filter container row flex-lg-row-reverse"
+      >
+        <div class="recipe-2-page-filter col-lg-4 p-5 shadow-lg d-none d-lg-block">
+          <form action="">
+            <h4 class="my-4">Search Recipes</h4>
+            <div class="d-flex gap-2 align-items-center mt-5">
+              <i class="fa-solid fa-hand-point-up"></i>
+              <input type="text" placeholder="Keyword(s)" />
+            </div>
+            <hr />
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fa-solid fa-bars"></i>
+              <input type="text" placeholder="Category" />
+            </div>
+            <hr />
+            <div class="d-flex gap-2 align-items-center">
+              <i class="fa-solid fa-burger"></i>
+              <input type="text" placeholder="Cuisine" />
+            </div>
+            <hr class="mb-5" />
+            <a href="#">SEARCH</a>
+          </form>
+        </div>
+        <div class="recipe-2-page-cards col-lg-8 row">
           <div class="recipe-2-page-card col-md-6 rounded shadow-lg">
             <div class="recipe-2-page-card-image-box">
               <img src="../img/tour-list-2-1-365x248.jpg" alt="" />
@@ -453,34 +478,15 @@
             <a href="#">2</a><a href="#">3</a>
           </div>
         </div>
-        <div class="recipe-2-page-filter col-4 p-5 shadow-lg">
-          <form action="">
-            <h4 class="my-4">Search Recipes</h4>
-            <div class="d-flex gap-2 align-items-center mt-5">
-              <i class="fa-solid fa-hand-point-up"></i>
-              <input type="text" placeholder="Keyword(s)" />
-            </div>
-            <hr />
-            <div class="d-flex gap-2 align-items-center">
-              <i class="fa-solid fa-bars"></i>
-              <input type="text" placeholder="Category" />
-            </div>
-            <hr />
-            <div class="d-flex gap-2 align-items-center">
-              <i class="fa-solid fa-burger"></i>
-              <input type="text" placeholder="Cuisine" />
-            </div>
-            <hr class="mb-5" />
-            <a href="#">SEARCH</a>
-          </form>
-        </div>
       </div>
     </section>
 
     <!-- FOOTERRRR ____________________________________________________________ -->
 
     <footer class="footer">
-      <div class="container d-flex gap-5 justify-content-evenly">
+      <div
+        class="container d-flex flex-wrap gap-5 justify-content-lg-between justify-content-xl-between justify-content-sm-center justify-content-md-center"
+      >
         <div class="d-flex flex-column">
           <h3 class="mb-3">About Me</h3>
           <p class="mb-4">

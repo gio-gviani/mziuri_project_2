@@ -37,6 +37,10 @@
         color: black;
       }
     }
+    @media screen and (max-width: 800px){
+      display: none;
+      
+    }
   }
   .recipe-2-page-cards-and-filter {
     padding: 105px 0px;

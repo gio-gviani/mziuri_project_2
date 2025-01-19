@@ -691,7 +691,8 @@ a {
 .homepage-popular-categories-section form {
   margin: 0;
 }
-.homepage-popular-categories-section form .col, .homepage-popular-categories-section form .col-md,
+.homepage-popular-categories-section form .col,
+.homepage-popular-categories-section form .col-md,
 .homepage-popular-categories-section form .col-5 {
   border-bottom: 1px solid white;
   border-right: 1px solid white;
@@ -998,6 +999,7 @@ a {
 }
 .homepage-aboutme-section .homepage-aboutme-image {
   background-image: url(../img/counter-img-719x609.png);
+  background-size: cover;
   height: 609px;
 }
 .homepage-aboutme-section h2 {
@@ -1020,14 +1022,17 @@ a {
   font-weight: 700;
   display: block;
   margin-bottom: 10px;
+  text-wrap: nowrap;
 }
 
 .homepage-featuredrecipes-section {
   background-image: url(../img/bg-image-2.jpg);
 }
 .homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg {
+  padding: 130px 0px;
   background-image: url(../img/bg-image-10.jpg);
   background-size: cover;
+  box-sizing: border-box;
 }
 .homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box {
   position: relative;
@@ -1045,12 +1050,9 @@ a {
   padding: 23px;
   border: 0;
 }
-.homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel {
-  padding: 20px;
-}
 .homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card {
-  width: 500px !important;
-  transform: translateX(60px) !important;
+  height: 100%;
+  width: 100%;
 }
 .homepage-featuredrecipes-section .homepage-featuredrecipes-section-double-bg .homepage-featuredrecipes-corusel-box .homepage-featuredrecipes-carusel .item .card .card-body {
   padding: 30px 40px;
@@ -1114,6 +1116,7 @@ a {
 .homepage-freeoffer-section {
   background-image: url(../img/bg-image-9.jpg);
   background-size: cover;
+  background-position: right;
   padding: 105px 0;
 }
 .homepage-freeoffer-section h4 {
@@ -1161,6 +1164,11 @@ a {
 .homepage-freeoffer-section a:hover {
   color: white;
   background-color: #75c15b;
+}
+@media screen and (max-width: 768px) {
+  .homepage-freeoffer-section {
+    background-image: none;
+  }
 }
 
 .homepage-information-section {
@@ -1288,7 +1296,7 @@ a {
 }
 
 .contactus-page-getintouch-section {
-  padding: 130px 0px;
+  padding: 130px 30px;
 }
 .contactus-page-getintouch-section .contactus-page-getintouch-section-box {
   max-width: 1200px;
@@ -1379,7 +1387,7 @@ a {
 }
 
 .blog-page-cardwrapper-section {
-  padding: 130px 220px;
+  padding: 130px 0px;
 }
 .blog-page-cardwrapper-section p {
   color: #353535;
@@ -1475,7 +1483,7 @@ a {
   font-family: "Unna", serif;
   font-size: 36px;
   font-weight: 400;
-  width: 370px;
+  max-width: 370px;
 }
 .about-page-aboutme-section p {
   color: #353535;
@@ -1588,6 +1596,11 @@ a {
 }
 .recipe-1-page-cardwrapper-section .recipe-1-page-categories a:hover {
   color: black;
+}
+@media screen and (max-width: 800px) {
+  .recipe-1-page-cardwrapper-section .recipe-1-page-categories {
+    display: none;
+  }
 }
 .recipe-1-page-cardwrapper-section .recipe-1-page-cards-and-filter {
   padding: 105px 0px;
@@ -1771,6 +1784,11 @@ a {
 .recipe-2-page-cardwrapper-section .recipe-2-page-categories a:hover {
   color: black;
 }
+@media screen and (max-width: 800px) {
+  .recipe-2-page-cardwrapper-section .recipe-2-page-categories {
+    display: none;
+  }
+}
 .recipe-2-page-cardwrapper-section .recipe-2-page-cards-and-filter {
   padding: 105px 0px;
 }
@@ -1935,6 +1953,10 @@ a {
 
 .single-recipe-page-main-section {
   padding: 130px 0px;
+}
+.single-recipe-page-main-section .single-recipe-page-main-middle-box img {
+  width: 100%;
+  max-width: 800px;
 }
 .single-recipe-page-main-section .single-recipe-page-main-middle-box .single-recipe-page-main-specifics i {
   font-size: 18px;
@@ -2136,9 +2158,6 @@ a {
   background-color: #75c15b;
   color: white;
 }
-.single-recipe-page-main-section .single-recipe-page-main-side-box {
-  padding: 60px 0px 0px 130px;
-}
 .single-recipe-page-main-section .single-recipe-page-main-side-box form input {
   border: none;
   outline: none;
@@ -2237,7 +2256,7 @@ a {
 }
 .single-recipe-page-main-section .single-recipe-page-main-side-box .single-recipe-page-main-side-box-getbook {
   background-image: url(../img/blog-post-8.jpg);
-  background-size: contain;
+  background-size: cover;
   height: 385px;
   border-radius: 4px;
   transition: 0.5s;
@@ -2271,10 +2290,10 @@ a {
 }
 
 .footer {
-  padding: 105px 0px;
+  padding: 105px 60px;
   box-sizing: content-box;
   background-image: url(../img/bg-image-2.jpg);
-  height: 30vh;
+  background-size: cover;
 }
 .footer i {
   font-size: 22px;
@@ -2294,7 +2313,9 @@ a {
   font-weight: 300;
   line-height: 1.75;
   color: white;
-  width: 330px;
+  max-width: 330px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .footer a {
   color: #353535;
